@@ -1,0 +1,7 @@
+roadmp svg is in the wrong color, make sure to change it back.....right color is on the first card found on the design
+
+check if it is possible to export the icons from figma and put in the work
+
+fix the links
+
+drop down menu on videos
