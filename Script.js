@@ -1,205 +1,180 @@
-const closer = document.querySelector(".closer")
-const close = document.querySelector(".close")
-const lines = document.querySelector(".lines")
+const footage = document.querySelector('.footage')
+const tv = document.querySelector('.tv')
+const video = document.querySelector('video');
+const clip = document.querySelector('.clip');
+
+const clip1 = document.querySelector('.clip1')
+const footage1 = document.querySelector('.footage1')
+const tv1 = document.querySelector('.tv1')
+
+const clip2 = document.querySelector('.clip2')
+const footage2 = document.querySelector('.footagex')
+const tv2 = document.querySelector('.tv2')
+
+const clip3 = document.querySelector('.clip3')
+const footage3 = document.querySelector('.footage3')
+const rv = document.querySelector('.rv')
+const xMark = document.querySelector('.x-mark')
+const xMark1 = document.querySelector('.x-mark1')
+const xMark2 = document.querySelector('.x-mark2')
+const xMark3 = document.querySelector('.x-mark3')
+const carousel = document.querySelectorAll('.carousel-slide')
+
+const question = document.querySelector(".question")
 const answer = document.querySelector(".answer")
-const none = document.querySelector(".none")
+const lines = document.querySelector(".lines")
+const closer = document.querySelector(".closer")
+const none = document.querySelector('.none')
 
-const closers = document.querySelector(".closer1")
-const closes = document.querySelector(".close1")
-const liness = document.querySelector(".lines1")
-const answers = document.querySelector(".answer1")
-const nones = document.querySelector(".none1")
+const question1 = document.querySelector(".question1")
+const answer1 = document.querySelector(".answer1")
+const lines1= document.querySelector(".lines1")
+const closer1 = document.querySelector(".closer1")
+const none1 = document.querySelector('.none1')
 
-const closer2 = document.querySelector(".closer2")
-const close2 = document.querySelector(".close2")
-const lines2 = document.querySelector(".lines2")
+const question2 = document.querySelector(".question2")
 const answer2 = document.querySelector(".answer2")
-const none2 = document.querySelector(".none2")
+const lines2= document.querySelector(".lines2")
+const closer2 = document.querySelector(".closer2")
+const none2 = document.querySelector('.none2')
 
-const closer3 = document.querySelector(".closer3")
-const close3 = document.querySelector(".close3")
-const lines3 = document.querySelector(".lines3")
+const question3 = document.querySelector(".question3")
 const answer3 = document.querySelector(".answer3")
-const none3 = document.querySelector(".none3")
+const lines3= document.querySelector(".lines3")
+const closer3 = document.querySelector(".closer3")
+const none3 = document.querySelector('.none3')
 
-const closer4 = document.querySelector(".closer4")
-const close4 = document.querySelector(".close4")
-const lines4 = document.querySelector(".lines4")
+const question4 = document.querySelector(".question4")
 const answer4 = document.querySelector(".answer4")
-const none4 = document.querySelector(".none4")
+const lines4= document.querySelector(".lines4")
+const closer4 = document.querySelector(".closer4")
+const none4 = document.querySelector('.none4')
 
-const closer5 = document.querySelector(".closer5")
-const close5 = document.querySelector(".close5")
-const lines5 = document.querySelector(".lines5")
+const question5 = document.querySelector(".question5")
 const answer5 = document.querySelector(".answer5")
-const none5 = document.querySelector(".none5")
+const lines5= document.querySelector(".lines5")
+const closer5 = document.querySelector(".closer5")
+const none5 = document.querySelector('.none5')
 
-const menu_btn = document.querySelector(".hamburger")
-const mobile = document.querySelector(".mobile-nav")
-const body = document.querySelector(".project")
-const active = document.querySelector(".is-active") 
-const dropdown = document.querySelector(".dropdown")
-const down = document.querySelector(".drop")
-const modal = document.querySelector(".modal")
-const modal1 = document.querySelector(".modal1")
-const big = document.querySelector(".big")
-const closed = document.querySelector(".closed")
-const cardClash = document.querySelector(".card-clash")
-const fone = document.querySelector(".fone-net")
-const link = document.querySelector(".link")
-const link1 = document.querySelector(".link1")
-const link2 = document.querySelector(".link2")
-const link3 = document.querySelector(".link3")
-
-const dialog = document.querySelector("#dialog")
-const submit = document.querySelector(".submit")
-const openModal = document.querySelector("#open-modal")
-
-openModal.addEventListener("click", () => {
-    dialog.showModal();
-    console.log("king")
+question5.addEventListener('click', () => {
+    if(answer5.style.display !== 'none'){
+        answer5.classList.toggle('answer5')
+        lines5.style.bottom = '5px'
+        closer5.classList.toggle('none5')
+        none5.classList.toggle('none5')
+    }
 })
 
 
-cardClash.addEventListener("click", () => {
-    modal.classList.toggle("none")
-
-})
-
-link.addEventListener("click", () => {
-    mobile.classList.toggle('is-active') 
-    body.classList.toggle('overflow')
-    menu_btn.classList.toggle('active')
-})
-
-link1.addEventListener("click", () => {
-    mobile.classList.toggle('is-active') 
-    body.classList.toggle('overflow')
-    menu_btn.classList.toggle('active')
-})
-
-link2.addEventListener("click", () => {
-    mobile.classList.toggle('is-active') 
-    body.classList.toggle('overflow')
-    menu_btn.classList.toggle('active')
-})
-
-link3.addEventListener("click", () => {
-    mobile.classList.toggle('is-active') 
-    body.classList.toggle('overflow')
-    menu_btn.classList.toggle('active')
-})
-
-fone.addEventListener("click", () => {
-    modal1.classList.toggle("none")
+question4.addEventListener('click', () => {
+    if(answer4.style.display !== 'none'){
+        answer4.classList.toggle('answer4')
+        lines4.style.bottom = '5px'
+        closer4.classList.toggle('none4')
+        none4.classList.toggle('none4')
+    }
 })
 
 
-closed.addEventListener("click", () => {
-    modal.style.display = "none"
-    modal.style.display = "none"    
+question3.addEventListener('click', () => {
+    if(answer3.style.display !== 'none'){
+        answer3.classList.toggle('answer3')
+        lines3.style.bottom = '5px'
+        closer3.classList.toggle('none3')
+        none3.classList.toggle('none3')
+    }
 })
 
 
-
-menu_btn.addEventListener("click", function () {
-        menu_btn.classList.toggle('active')
-        mobile.classList.toggle('is-active')
-        body.classList.toggle('overflow')
-    
-}) 
-
-dropdown.addEventListener("click", () => {
-    down.classList.toggle('opacity')
-    
-} )
-
-close.addEventListener("click", () => {
-    if (answer.style.display == "block") {
-        lines.style.bottom = "5px"
-        answer.style.display = "none"
-        none.style.display = "none"
-        closer.style.display = "block"
-    }else{
-    lines.style.bottom = "0px"
-    answer.style.display = "block"
-    closer.style.display = "none"
-    none.style.display= "block" 
-}
+question2.addEventListener('click', () => {
+    if(answer2.style.display !== 'none'){
+        answer2.classList.toggle('answer2')
+        lines2.style.bottom = '5px'
+        closer2.classList.toggle('none2')
+        none2.classList.toggle('none2')
+    }
 })
 
-closes.addEventListener("click", () => {
-    if (answers.style.display == "block") {
-        liness.style.bottom = "5px"
-        answers.style.display = "none"
-        nones.style.display = "none"
-        closers.style.display = "block"
-    }else{
-    liness.style.bottom = "0px"
-    answers.style.display = "block"
-    closers.style.display = "none"
-    nones.style.display= "block"
-    
-}
+question1.addEventListener('click', () => {
+    if(answer1.style.display !== 'none'){
+        answer1.classList.toggle('answer1')
+        lines1.style.bottom = '5px'
+        closer1.classList.toggle('none1')
+        none1.classList.toggle('none1')
+    }
 })
 
-close2.addEventListener("click", () => {
-    if (answer2.style.display == "block") {
-        lines2.style.bottom = "5px"
-        answer2.style.display = "none"
-        none2.style.display = "none"
-        closer2.style.display = "block"
-    }else{
-    lines2.style.bottom = "0px"
-    answer2.style.display = "block"
-    closer2.style.display = "none"
-    none2.style.display= "block"
-    
-}
+
+question.addEventListener('click', () => {
+    if(answer.style.display !== 'none'){
+        answer.classList.toggle('ans')
+        lines.style.bottom = '5px'
+        closer.classList.toggle('none')
+        none.classList.toggle('none')
+    }
 })
 
-close3.addEventListener("click", () => {
-    if (answer3.style.display == "block") {
-        lines3.style.bottom = "5px"
-        answer3.style.display = "none"
-        none3.style.display = "none"
-        closer3.style.display = "block"
-    }else{
-    lines3.style.bottom = "0px"
-    answer3.style.display = "block"
-    closer3.style.display = "none"
-    none3.style.display= "block"
-    
-}
+footage.addEventListener('mouseenter', () => {
+    tv.style.display = 'flex'
+    clip.play();
+    footage1.style.display = 'none'
+    footage2.style.display = 'none'
+    footage3.style.display = 'none'
+});
+
+xMark.addEventListener('click', () => {
+    tv.style.display = 'none'
+    clip.pause();
+    footage1.style.display = 'block'
+    footage2.style.display = 'block'
+    footage3.style.display = 'block'
 })
 
-close4.addEventListener("click", () => {
-    if (answer4.style.display == "block") {
-        lines4.style.bottom = "5px"
-        answer4.style.display = "none"
-        none4.style.display = "none"
-        closer4.style.display = "block"
-    }else{
-    lines4.style.bottom = "0px"
-    answer4.style.display = "block"
-    closer4.style.display = "none"
-    none4.style.display= "block"
-    
-}
+footage1.addEventListener('mouseenter', () => {
+    tv1.style.display = 'flex'
+    clip1.play();
+    footage.style.display = 'none'
+    footage2.style.display = 'none'
+    footage3.style.display = 'none'
+});
+
+xMark1.addEventListener('click', () => {
+    tv1.style.display = 'none'
+    clip1.pause();
+    footage.style.display = 'block'
+    footage2.style.display = 'block'
+    footage3.style.display = 'block'
 })
 
-close5.addEventListener("click", () => {
-    if (answer5.style.display == "block") {
-        lines5.style.bottom = "0px"
-        answer5.style.display = "none"
-        none5.style.display = "none"
-        closer5.style.display = "block"
-    }else{
-    lines5.style.bottom = "0px"
-    answer5.style.display = "block"
-    closer5.style.display = "none"
-    none5.style.display= "block"
-    
-}
+footage2.addEventListener('mouseenter', () => {
+    tv2.style.display = 'flex'
+    clip2.play();
+    footage.style.display = 'none'
+    footage1.style.display = 'none'
+    footage3.style.display = 'none'
+});
+
+xMark2.addEventListener('click', () => {
+    tv2.style.display = 'none'
+    clip2.pause();
+    footage1.style.display = 'block'
+    footage.style.display = 'block'
+    footage3.style.display = 'block'
+})
+
+footage3.addEventListener('mouseenter', () => {
+    rv.style.display = 'flex'
+    clip3.play();
+    footage1.style.display = 'none'
+    footage.style.display = 'none'
+    footage2.style.display = 'none'
+});
+
+xMark3.addEventListener('click', () => {
+    rv.style.display = 'none'
+    clip3.pause();
+    footage1.style.display = 'block'
+    footage.style.display = 'block'
+    footage2.style.display = 'block'
 })
 
