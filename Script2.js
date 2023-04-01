@@ -17,6 +17,7 @@ const link3 = document.querySelector(".link3")
 const dialog = document.querySelector("#dialog")
 const submit = document.querySelector(".submit")
 const openModal = document.querySelector("#open-modal")
+const xx = document.querySelector(".xx")
 
 const animateElements = document.querySelectorAll('.animate')
 const blinkElements = document.querySelectorAll('.blink')
@@ -31,6 +32,13 @@ const observer = new IntersectionObserver((entries) => {
         }
     })
 })
+
+xx.addEventListener('click' , () => {
+    mobile.classList.toggle('is-active')
+    xx.style.display = 'none'
+    menu_btn.style.display = 'block'
+}
+)
 
 const animator = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -51,33 +59,33 @@ openModal.addEventListener("click", () => {
 })
 
 menu_btn.addEventListener("click", () => {  
-        menu_btn.classList.toggle('active')
+        // menu_btn.classList.toggle('active')
         mobile.classList.toggle('is-active')
-        body.classList.toggle('overflow')
-    
+        body.style.overflow = 'hidden'
+        xx.style.display = 'block'
 }) 
 
 link.addEventListener("click", () => {
     mobile.classList.toggle('is-active') 
-    body.classList.toggle('overflow')
+    body.style.overflow = 'scroll'
     menu_btn.classList.toggle('active')
 })
 
 link1.addEventListener("click", () => {
     mobile.classList.toggle('is-active') 
-    body.classList.toggle('overflow')
+    body.style.overflow = 'scroll'
     menu_btn.classList.toggle('active')
 })
 
 link2.addEventListener("click", () => {
     mobile.classList.toggle('is-active') 
-    body.classList.toggle('overflow')
+    body.style.overflow = 'scroll'
     menu_btn.classList.toggle('active')
 })
 
 link3.addEventListener("click", () => {
     mobile.classList.toggle('is-active') 
-    body.classList.toggle('overflow')
+    body.style.overflow = 'scroll'
     menu_btn.classList.toggle('active')
 })
 

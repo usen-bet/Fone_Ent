@@ -1191,7 +1191,7 @@ main{
     left:50%;
     transform:translateX(-50%) translateY(-50%);
     border:none;
-    outline:noneauto-fit;
+    outline:none;
 }
 
 .dialog > p{
@@ -1334,6 +1334,7 @@ form{
        left:50%;
        transform: translateX(-50%);
        height:380px;
+       border-radius: 20px;
     }
 
     .tv1{
@@ -1341,6 +1342,7 @@ form{
        left:50%;
        transform: translateX(-50%);
        height:380px;
+       border-radius: 20px;
     }
 
     .tv2{
@@ -1348,6 +1350,7 @@ form{
        left:50%;
        transform: translateX(-50%);
        height:380px;
+       border-radius: 20px;
     }
 
     .rv{
@@ -1355,6 +1358,7 @@ form{
        left:50%;
        transform: translateX(-50%);
        height:380px;
+       border-radius: 20px;
     }
 
     .links > a > p{
@@ -1474,6 +1478,26 @@ body{
         font-size: 55px;
     }
 
+    .tv{
+        width:400px;
+        border-radius: 20px;
+    }
+
+    .tv1{
+        width:400px;
+        border-radius: 20px;
+    }
+
+    .tv2{
+        width:400px;
+        border-radius: 20px;
+    }
+
+    .tv3{
+        width:400px;
+        border-radius: 20px;
+    }
+
     p{
         font-size: 16px;
         height: fit-content;
@@ -1525,8 +1549,29 @@ body{
         display: none;
     }
 
+    .tv{
+        width:400px;
+        border-radius: 20px;
+    }
+
+    .tv1{
+        width:400px;
+        border-radius: 20px;
+    }
+
+    .tv2{
+        width:400px;
+        border-radius: 20px;
+    }
+
+    .rv{
+        width:400px;
+        border-radius: 20px;
+    }
+
     .body{
         margin-top: 70px;
+        overflow-x: hidden;
     }
 
     .dink{
@@ -1554,24 +1599,40 @@ body{
         display: block;
         width: 40px;
         cursor: pointer;
-        height:36px ;
-        appearance: none;
+        height:36px;
         outline: none;
         border: none;
         position: relative;
-        z-index:9999999999999;
     }
 
-    .hamburger > .barr{
+    .barr0{
         display: block;
         width: 100%;
         height: 5px;
         background-color: white;
         margin: 6px 0px;
-        transition: 0.4s; 
+        transition: 0.4s;
     }
 
-    .hamburger::after, .hamburger::before{
+    .barr1{
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0px;
+        transition: 0.4s;
+    }
+
+    .barr2{
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0px;
+        transition: 0.4s;
+    }
+
+    /* .hamburger::after, .hamburger::before{
         content: " ";
         display: block;
         width: 100%;
@@ -1579,15 +1640,48 @@ body{
         background-color: white;
         margin: 6px 0px;
         transition: 0.4s;
+    } */
+    .navi{
+        width:fit-content;
+        position:absolute;
+        top:60px;
+        right:0px;
+        margin-right: 20px;
+        z-index:999999999999999999999;
     }
 
-    .active:before{
+    .bar1{
+       height:5px;
+       width:40px; 
+       background-color:white ;
+       transform:rotate(45deg) translate(-8px, -8px);
+    }
+
+    .bar2{
+       height:5px;
+       width:40px; 
+       background-color:white ;
+       transform:rotate(-45deg) translate(9.7px, -12px);
+    }
+
+    .xx{
+        position:absolute;
+        top:92px;
+        right:20px;
+        width:50px;
+        height:50px;
+        cursor:pointer;
+        display:grid;
+        place-items: center;
+    }
+
+    /* .active:before{
         transform:rotate(-45deg) translate(-7.7px, 6px);
     }
 
     .active:after{
-        transform:rotate(45deg) translate(-8px, -8px);
-    }
+        transform:rotate(45deg) translate(0px, -8px);
+    } */
 
     .active > .barr{
         opacity: 0;
@@ -1595,21 +1689,18 @@ body{
 
     .mobile-nav{
         margin-top: 0px;
-        display:block;
-        position: fixed;
+        display:none;
+        position: absolute;
         top:0;
-        right: 0;
-        height: 100%;
+        right: -100%;
+        z-index: 9999999999999;
+        height: 100vh;
         width: 50%;
         background-color: #2477EE;
-        z-index: 9999999;
         justify-content: center;
         border:1px solid #7d7d7d;
-        left:100%;
-        transition: 0.4s;
-        display:flex;
+        transition:all ease 0.6s;
         justify-content: start;
-        align-items:left;
     }
 
     .press{
@@ -1619,14 +1710,14 @@ body{
         flex-direction: column;
         justify-content: start;
         position:relative;
-        top:50px;
+        top:150px;
         text-align: left;
         
     }
 
     .is-active{
-        transform:translateX(-100%);
-        display: grid;
+        right:0px;
+        display:block;
     }
 
 
@@ -1971,18 +2062,6 @@ body{
     height:100%;
     border-radius:20px;
 }
-
-.closed1{
-    position:relative;
-    z-index: 9999999999999999999999999;
-    color:white;
-    cursor: pointer;
-    font-size:20px;
-    height:fit-content;
-    width: fit-content;
-    display:flex;
-}
-
 .tv{
     background-color: transparent;
     position:absolute;

@@ -117,9 +117,6 @@ question.addEventListener('click', () => {
 footage.addEventListener('mouseenter', () => {
     tv.style.display = 'flex'
     clip.play();
-    footage1.style.display = 'none'
-    footage2.style.display = 'none'
-    footage3.style.display = 'none'
 });
 
 xMark.addEventListener('click', () => {
@@ -133,9 +130,6 @@ xMark.addEventListener('click', () => {
 footage1.addEventListener('mouseenter', () => {
     tv1.style.display = 'flex'
     clip1.play();
-    footage.style.display = 'none'
-    footage2.style.display = 'none'
-    footage3.style.display = 'none'
 });
 
 xMark1.addEventListener('click', () => {
@@ -149,9 +143,6 @@ xMark1.addEventListener('click', () => {
 footage2.addEventListener('mouseenter', () => {
     tv2.style.display = 'flex'
     clip2.play();
-    footage.style.display = 'none'
-    footage1.style.display = 'none'
-    footage3.style.display = 'none'
 });
 
 xMark2.addEventListener('click', () => {
@@ -165,9 +156,6 @@ xMark2.addEventListener('click', () => {
 footage3.addEventListener('mouseenter', () => {
     rv.style.display = 'flex'
     clip3.play();
-    footage1.style.display = 'none'
-    footage.style.display = 'none'
-    footage2.style.display = 'none'
 });
 
 xMark3.addEventListener('click', () => {
@@ -177,4 +165,3 @@ xMark3.addEventListener('click', () => {
     footage.style.display = 'block'
     footage2.style.display = 'block'
 })
-
